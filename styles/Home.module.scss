@@ -26,9 +26,6 @@
 }
 
 .container {
-  height: 100vh;
-  background-color: #f2f5f7;
-
   .header {
     @include font(24px, bold, 18px);
     padding: 16px;
@@ -162,6 +159,7 @@
   }
 
   .success_popup {
+    overflow: hidden;
     z-index: 101;
     position: absolute;
     top: 0%;
@@ -172,8 +170,10 @@
 
     &__card {
       z-index: 102;
+      overflow: auto;
       position: absolute;
-      top: 25%;
+      top: 50%;
+      transform: translateY(-50%);
       left: 4%;
       flex-direction: column;
       width: 92%;
