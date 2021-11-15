@@ -42,7 +42,7 @@ const MainPresenter: NextPage = () => {
   }, []);
 
   return (
-    <>
+    <div className={styles.charity}>
       <div className={styles.header}>Ủng hộ chống dịch Covid-19</div>
 
       <div className={styles.methods}>
@@ -100,7 +100,7 @@ const MainPresenter: NextPage = () => {
             })}
           </div>
           <button
-            className={styles.transfer__confirm}
+            className={`${styles.transfer__confirm}`}
             onClick={(e) => handleSubmit(amount)}
           >
             Tiến hành thanh toán
@@ -152,12 +152,12 @@ const MainPresenter: NextPage = () => {
         </span>
         <button
           onClick={(e) => setSuccessVisible(false)}
-          className={styles.success_popup__btn}
+          className={`${styles.success_popup__btn}`}
         >
           OK
         </button>
       </div>
-    </>
+    </div>
   );
 };
 
