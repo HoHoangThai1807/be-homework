@@ -100,7 +100,7 @@ const MainPresenter: NextPage = () => {
             })}
           </div>
           <button
-            className={`${styles.transfer__confirm}`}
+            className={`${styles.transfer__confirm} ${styles.animate}`}
             onClick={(e) => handleSubmit(amount)}
           >
             Tiến hành thanh toán
@@ -152,7 +152,7 @@ const MainPresenter: NextPage = () => {
         </span>
         <button
           onClick={(e) => setSuccessVisible(false)}
-          className={`${styles.success_popup__btn}`}
+          className={`${styles.success_popup__btn} ${styles.animate}`}
         >
           OK
         </button>
